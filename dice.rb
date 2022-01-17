@@ -10,6 +10,11 @@ def show_rolling_die
 end
 show_rolling_die
 puts "<=================>"
+sum = 0
 num.times do
-  puts rand(6) + 1
+  a = rand(6) + 1
+  puts a
+  sum += a
 end
+puts "<=================>"
+puts "Sum of dice: #{sum}"
